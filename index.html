@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Four card feature section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            red: '#EA5454',
+            cyan: '#44D3D2',
+            orange: '#FCAE4A',
+            blue: '#549EF2',
+            gray: '#4D4F62',
+          },
+          fontFamily: {
+            poppins: ['Poppins']
+          },
+          boxShadow: {
+            'card': '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+
+<body class="text-gray font-poppins">
+  <main class="flex justify-center flex-col">
+    <div class="md:mt-20 mt-[85px] px-8">
+      <div class="grid justify-center text-center gap-4">
+        <div>
+          <h1 class=" font-extralight text-[24px] tracking-[0.17px] md:text-[36px] md:tracking-wide">Reliable, efficient
+            delivery
+          </h1>
+          <h1 class="font-semibold text-[24px] tracking-[0.25px] md:text-[36px] md:tracking-wide">Powered by Technology
+          </h1>
+        </div>
+        <p class="text-[15px] opacity-50 tracking-[0.1px] md:w-[540px]">Our Artificial Intelligence powered tools use
+          millions of
+          project data
+          points
+          to ensure that your project is successful</p>
+      </div>
+    </div>
+    <div
+      class="px-8 mt-[76px] flex flex-col md:grid md:grid-cols-3 md:grid-flow-col gap-6 md:w-full md:mx-auto md:max-w-[1110px] content-center">
+      <div class="grid border-t-4 p-7 border-cyan rounded-lg shadow-card md:my-[140px]">
+        <h2 class=" font-semibold text-[20px] tracking-[0px]">Supervisor</h2>
+        <p class="text-[13px] opacity-50 tracking-[0.09px]"> Monitors activity to identify project roadblocks</p>
+        <div class="flex pt-8 justify-end">
+          <img src="images/icon-supervisor.svg" alt="magnifiging glass">
+        </div>
+      </div>
+      <div class="grid gap-6 md:col-start-2">
+        <div class="grid border-t-4 p-6 border-red rounded-lg shadow-card ">
+          <h2 class="font-semibold text-[20px] tracking-[0px]">Team Builder</h2>
+          <p class="text-[13px] opacity-50 tracking-[0.09px]">Scans our talent network to create the optimal team for
+            your
+            project</p>
+          <div class="flex pt-8 justify-end">
+            <img src="images/icon-team-builder.svg" alt="magnifiging glass">
+          </div>
+        </div>
+        <div class="grid border-t-4 p-6 border-orange rounded-lg shadow-card">
+          <h2 class="font-semibold text-[20px] tracking-[0px]">Karma</h2>
+          <p class="text-[13px] opacity-50 tracking-[0.09px]">Regularly evaluates our talent to ensure quality</p>
+
+          <div class="flex pt-8 justify-end">
+            <img src="images/icon-karma.svg" alt="magnifiging glass">
+          </div>
+        </div>
+      </div>
+      <div class="grid border-t-4 p-6 border-blue rounded-lg shadow-card md:my-[140px]">
+        <h2 class="font-semibold text-[20px] tracking-[0px]">Calculator</h2>
+        <p class="text-[13px] opacity-50 tracking-[0.09px]">Uses data from past projects to provide better delivery
+          estimates</p>
+
+        <div class="flex pt-8 justify-end">
+          <img src="images/icon-calculator.svg" alt="magnifiging glass">
+        </div>
+      </div>
+      <div />
+  </main>
+
+  <footer>
+    <p class="attribution mt-10">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">wildchild</a>.
+    </p>
+  </footer>
+</body>
+
+</html>
